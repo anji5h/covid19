@@ -1,0 +1,17 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+.container{
+  position: absolute;
+  left: 50%;
+  top:30px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 45%;
+  padding: 30px 50px 0px 50px;
+  border-radius: 10px;
+}
