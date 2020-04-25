@@ -24,9 +24,9 @@ export default class Covid19 extends Component {
     };
   }
   componentDidMount() {
-    // this.setState({
-    //   isloading: true,
-    // });
+    this.setState({
+      isloading: true,
+    });
     Promise.all([
       fetch(
         "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php",
