@@ -45,7 +45,6 @@ export default class Covid19 extends Component {
     ])
 
       .then((data) => {
-        console.log(data);
         this.setState({
           nepdata: {
             positive: data[1].tested_positive,
@@ -65,7 +64,6 @@ export default class Covid19 extends Component {
         });
       })
       .catch((err) => {
-        console.log(err);
       })
       .finally(() => {
         this.setState({
