@@ -1,53 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 h2 {
   text-align: center;
   text-decoration: underline;
 }
-.covid-result {
-  margin-top: 30px;
-}
 .covid1-result,
 .covid-result {
-  height: 400px;
-}
-.row1,
-.row2 {
-  width: fit-content;
-  height: 140px;
   margin: auto;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  padding-top: 20px;
+}
+.row {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  margin-top: 20px;
+  width: fit-content;
+}
+.row2{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+  width: fit-content;
+  margin: 30px auto 0px auto ;
 }
 .box {
-  width: 120px;
-  padding: 10px 20px;
+  width: 150px;
+  padding: 10px 0px;
   text-align: center;
-  margin: 30px 30px 0 0px;
   border: 2px solid #aaa;
   border-radius: 10px;
 }
 .box:hover {
   border-color: #000;
-  transform: scale(1.1);
-}
-.total,
-.positive,
-.negative,
-.pending,
-.isolation,
-.recovered {
-  float: left;
+  transform: scale(1.05);
 }
 .box p:nth-child(odd) {
   height: 65px;
-  font-size: 20px;
   font-weight: 900;
   text-decoration: underline;
 }
 .box p:nth-child(even) {
   font-weight: bold;
-  margin-top: 20px;
   font-size: 18px;
   letter-spacing: 2px;
 }

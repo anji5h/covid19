@@ -24,9 +24,9 @@ export default class Covid19 extends Component {
     };
   }
   componentDidMount() {
-    this.setState({
-      isloading: true,
-    });
+    // this.setState({
+    //   isloading: true,
+    // });
     Promise.all([
       fetch(
         "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php",
@@ -81,7 +81,7 @@ export default class Covid19 extends Component {
         <h1>COVID-19 STATISTICS</h1>
         <div className="covid-result">
           <h2>NEPAL SUMMARY</h2>
-          <div className="row1">
+            <div className='row'>
             <div className="total box">
               <p>TOTAL TEST</p>
               <p>{this.state.nepdata.total}</p>
@@ -98,8 +98,7 @@ export default class Covid19 extends Component {
               <p>PENDING TEST</p>
               <p>{this.state.nepdata.pending}</p>
             </div>
-          </div>
-          <div className="row2">
+          
             <div className="isolation box">
               <p>IN ISOLATION</p>
               <p>{this.state.nepdata.isolation}</p>
@@ -108,11 +107,11 @@ export default class Covid19 extends Component {
               <p>TOTAL RECOVERED</p>
               <p>{this.state.nepdata.recovered}</p>
             </div>
-          </div>
+            </div>
         </div>
         <div className="covid1-result">
           <h2>WORLD SUMMARY</h2>
-          <div className="row1">
+          <div className="row">
             <div className="negative box">
               <p>TOTAL CASES</p>
               <p>{this.state.whodata.totalcase}</p>
@@ -125,8 +124,8 @@ export default class Covid19 extends Component {
               <p>NEW DEATHS</p>
               <p>{this.state.whodata.newdeath}</p>
             </div>
-          </div>
-          <div className="row2">
+            </div>
+            <div className='row2'>
             <div className="pending box">
               <p>TOTAL DEATHS</p>
               <p>{this.state.whodata.totaldeath}</p>
