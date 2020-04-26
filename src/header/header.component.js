@@ -17,7 +17,10 @@ export default function Header() {
           <Link to="/world">WORLD</Link>
         </span>
         <span>
-          <Link to="/symptom">SYMPTOMS</Link>
+          <Link to="/symptoms">SYMPTOMS</Link>
+        </span>
+        <span>
+          <Link to='/preventions'>PREVENTIONS</Link>
         </span>
       </div>
     </div>

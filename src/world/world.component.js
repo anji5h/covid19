@@ -123,6 +123,7 @@ export default class World extends Component {
     return (
       <div className="country-stat">
         <Header></Header>
+        <p className="warning">PLAESE SELECT COUNTRY NAME TO PROCEED</p>
         <div className="search-box">
           <input
             type="text"
@@ -140,7 +141,10 @@ export default class World extends Component {
           ></input>
           <div className="search-list">{searchlist}</div>
         </div>
-        <div className="world-content">{content}</div>
+
+        <div className="world-content">
+          {content}
+        </div>
       </div>
     );
   }

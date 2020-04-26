@@ -7,8 +7,20 @@ export default class Covid19 extends Component {
   constructor() {
     super();
     this.state = {
-      worlddata: {},
-      countrydata: {},
+      worlddata: {
+        TotalConfirmed: 0,
+        TotalDeaths: 0,
+        TotalRecovered: 0,
+        ActiveCases: 0,
+      },
+      countrydata: {
+        tested_positive: 0,
+        tested_total: 0,
+        in_isolation: 0,
+        deaths: 0,
+        recovered: 0,
+        active: 0,
+      },
       isloading: false,
       searchlist: [],
     };
@@ -23,24 +35,6 @@ export default class Covid19 extends Component {
         this.setState({
           worlddata: data.worlddata,
           countrydata: data.nepaldata,
-        });
-      })
-      .catch((err) => {
-        this.setState({
-          worlddata: {
-            TotalConfirmed: 0,
-            TotalDeaths: 0,
-            TotalRecovered: 0,
-            ActiveCases: 0,
-          },
-          countrydata: {
-            tested_positive: 0,
-            tested_total: 0,
-            in_isolation: 0,
-            deaths: 0,
-            recovered: 0,
-            active: 0,
-          },
         });
       })
       .finally(() => {
@@ -96,7 +90,7 @@ export default class Covid19 extends Component {
             <div className="row1">
               <div className="box">
                 <p>
-                  <i className="fas fa-procedures icon"></i>
+                <i className="fas fa-bed icon"></i>
                 </p>
                 <p>{this.state.countrydata.tested_positive}</p>
                 <p>Cases</p>
