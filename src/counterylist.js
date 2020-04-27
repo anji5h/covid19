@@ -1,1242 +1,2947 @@
-
 let CountryList=[
     {
-        "Country": "Belgium",
-        "Slug": "belgium",
-        "ISO2": "BE"
-    },
-    {
-        "Country": "Nigeria",
-        "Slug": "nigeria",
-        "ISO2": "NG"
-    },
-    {
-        "Country": "Palestinian Territory",
-        "Slug": "palestine",
-        "ISO2": "PS"
-    },
-    {
-        "Country": "Senegal",
-        "Slug": "senegal",
-        "ISO2": "SN"
-    },
-    {
-        "Country": "Belize",
-        "Slug": "belize",
-        "ISO2": "BZ"
-    },
-    {
-        "Country": "Dominican Republic",
-        "Slug": "dominican-republic",
-        "ISO2": "DO"
-    },
-    {
-        "Country": "Estonia",
-        "Slug": "estonia",
-        "ISO2": "EE"
-    },
-    {
-        "Country": "Peru",
-        "Slug": "peru",
-        "ISO2": "PE"
-    },
-    {
-        "Country": "Saint-Barthélemy",
-        "Slug": "saint-barthélemy",
-        "ISO2": "BL"
-    },
-    {
-        "Country": "Sao Tome and Principe",
-        "Slug": "sao-tome-and-principe",
-        "ISO2": "ST"
-    },
-    {
-        "Country": "Azerbaijan",
-        "Slug": "azerbaijan",
-        "ISO2": "AZ"
-    },
-    {
-        "Country": "Canada",
-        "Slug": "canada",
-        "ISO2": "CA"
-    },
-    {
-        "Country": "Albania",
-        "Slug": "albania",
-        "ISO2": "AL"
-    },
-    {
-        "Country": "Aruba",
-        "Slug": "aruba",
-        "ISO2": "AW"
-    },
-    {
-        "Country": "Chad",
-        "Slug": "chad",
-        "ISO2": "TD"
-    },
-    {
-        "Country": "Cuba",
-        "Slug": "cuba",
-        "ISO2": "CU"
-    },
-    {
-        "Country": "Jersey",
-        "Slug": "jersey",
-        "ISO2": "JE"
-    },
-    {
-        "Country": "Nicaragua",
-        "Slug": "nicaragua",
-        "ISO2": "NI"
-    },
-    {
-        "Country": "Palau",
-        "Slug": "palau",
-        "ISO2": "PW"
-    },
-    {
-        "Country": "Rwanda",
-        "Slug": "rwanda",
-        "ISO2": "RW"
-    },
-    {
-        "Country": "Saint Lucia",
-        "Slug": "saint-lucia",
-        "ISO2": "LC"
-    },
-    {
-        "Country": "Trinidad and Tobago",
-        "Slug": "trinidad-and-tobago",
-        "ISO2": "TT"
-    },
-    {
-        "Country": "Comoros",
-        "Slug": "comoros",
-        "ISO2": "KM"
-    },
-    {
-        "Country": "Iraq",
-        "Slug": "iraq",
-        "ISO2": "IQ"
-    },
-    {
-        "Country": "Morocco",
-        "Slug": "morocco",
-        "ISO2": "MA"
-    },
-    {
-        "Country": "American Samoa",
-        "Slug": "american-samoa",
-        "ISO2": "AS"
-    },
-    {
-        "Country": "Cocos (Keeling) Islands",
-        "Slug": "cocos-keeling-islands",
-        "ISO2": "CC"
-    },
-    {
-        "Country": "Greenland",
-        "Slug": "greenland",
-        "ISO2": "GL"
-    },
-    {
-        "Country": "Northern Mariana Islands",
-        "Slug": "northern-mariana-islands",
-        "ISO2": "MP"
-    },
-    {
-        "Country": "Pitcairn",
-        "Slug": "pitcairn",
-        "ISO2": "PN"
-    },
-    {
-        "Country": "Australia",
-        "Slug": "australia",
-        "ISO2": "AU"
-    },
-    {
-        "Country": "Cambodia",
-        "Slug": "cambodia",
-        "ISO2": "KH"
-    },
-    {
-        "Country": "Chile",
-        "Slug": "chile",
-        "ISO2": "CL"
-    },
-    {
-        "Country": "Saint Pierre and Miquelon",
-        "Slug": "saint-pierre-and-miquelon",
-        "ISO2": "PM"
-    },
-    {
-        "Country": "Brazil",
-        "Slug": "brazil",
-        "ISO2": "BR"
-    },
-    {
-        "Country": "Guadeloupe",
-        "Slug": "guadeloupe",
-        "ISO2": "GP"
-    },
-    {
-        "Country": "Niger",
-        "Slug": "niger",
-        "ISO2": "NE"
-    },
-    {
-        "Country": "Solomon Islands",
-        "Slug": "solomon-islands",
-        "ISO2": "SB"
-    },
-    {
-        "Country": "Gibraltar",
-        "Slug": "gibraltar",
-        "ISO2": "GI"
-    },
-    {
-        "Country": "Lao PDR",
-        "Slug": "lao-pdr",
-        "ISO2": "LA"
-    },
-    {
-        "Country": "Malta",
-        "Slug": "malta",
-        "ISO2": "MT"
-    },
-    {
-        "Country": "Papua New Guinea",
-        "Slug": "papua-new-guinea",
-        "ISO2": "PG"
-    },
-    {
-        "Country": "Uganda",
-        "Slug": "uganda",
-        "ISO2": "UG"
-    },
-    {
-        "Country": "Fiji",
-        "Slug": "fiji",
-        "ISO2": "FJ"
-    },
-    {
-        "Country": "Latvia",
-        "Slug": "latvia",
-        "ISO2": "LV"
-    },
-    {
-        "Country": "Benin",
-        "Slug": "benin",
-        "ISO2": "BJ"
-    },
-    {
-        "Country": "Ethiopia",
-        "Slug": "ethiopia",
-        "ISO2": "ET"
-    },
-    {
-        "Country": "France",
-        "Slug": "france",
-        "ISO2": "FR"
-    },
-    {
-        "Country": "Korea (North)",
-        "Slug": "korea-north",
-        "ISO2": "KP"
-    },
-    {
-        "Country": "Philippines",
-        "Slug": "philippines",
-        "ISO2": "PH"
-    },
-    {
-        "Country": "Saint Helena",
-        "Slug": "saint-helena",
-        "ISO2": "SH"
-    },
-    {
-        "Country": "Tokelau",
-        "Slug": "tokelau",
-        "ISO2": "TK"
-    },
-    {
-        "Country": "Austria",
-        "Slug": "austria",
-        "ISO2": "AT"
-    },
-    {
-        "Country": "Bhutan",
-        "Slug": "bhutan",
-        "ISO2": "BT"
-    },
-    {
-        "Country": "Côte d'Ivoire",
-        "Slug": "cote-divoire",
-        "ISO2": "CI"
-    },
-    {
-        "Country": "Georgia",
-        "Slug": "georgia",
-        "ISO2": "GE"
-    },
-    {
-        "Country": "Antarctica",
-        "Slug": "antarctica",
-        "ISO2": "AQ"
-    },
-    {
-        "Country": "Denmark",
-        "Slug": "denmark",
-        "ISO2": "DK"
-    },
-    {
-        "Country": "Gabon",
-        "Slug": "gabon",
-        "ISO2": "GA"
-    },
-    {
-        "Country": "United Kingdom",
-        "Slug": "united-kingdom",
-        "ISO2": "GB"
-    },
-    {
-        "Country": "Monaco",
-        "Slug": "monaco",
-        "ISO2": "MC"
-    },
-    {
-        "Country": "Timor-Leste",
-        "Slug": "timor-leste",
-        "ISO2": "TL"
-    },
-    {
-        "Country": "Togo",
-        "Slug": "togo",
-        "ISO2": "TG"
-    },
-    {
-        "Country": "Virgin Islands, US",
-        "Slug": "virgin-islands",
-        "ISO2": "VI"
-    },
-    {
-        "Country": "Yemen",
-        "Slug": "yemen",
-        "ISO2": "YE"
-    },
-    {
-        "Country": "Bahamas",
-        "Slug": "bahamas",
-        "ISO2": "BS"
-    },
-    {
-        "Country": "Bouvet Island",
-        "Slug": "bouvet-island",
-        "ISO2": "BV"
-    },
-    {
-        "Country": "Grenada",
-        "Slug": "grenada",
-        "ISO2": "GD"
-    },
-    {
-        "Country": "Isle of Man",
-        "Slug": "isle-of-man",
-        "ISO2": "IM"
-    },
-    {
-        "Country": "Italy",
-        "Slug": "italy",
-        "ISO2": "IT"
-    },
-    {
-        "Country": "British Indian Ocean Territory",
-        "Slug": "british-indian-ocean-territory",
-        "ISO2": "IO"
-    },
-    {
-        "Country": "Montenegro",
-        "Slug": "montenegro",
-        "ISO2": "ME"
-    },
-    {
-        "Country": "Congo (Brazzaville)",
-        "Slug": "congo-brazzaville",
-        "ISO2": "CG"
-    },
-    {
-        "Country": "Costa Rica",
-        "Slug": "costa-rica",
-        "ISO2": "CR"
-    },
-    {
-        "Country": "Slovenia",
-        "Slug": "slovenia",
-        "ISO2": "SI"
-    },
-    {
-        "Country": "Mozambique",
-        "Slug": "mozambique",
-        "ISO2": "MZ"
-    },
-    {
-        "Country": "Puerto Rico",
-        "Slug": "puerto-rico",
-        "ISO2": "PR"
-    },
-    {
-        "Country": "San Marino",
-        "Slug": "san-marino",
-        "ISO2": "SM"
-    },
-    {
-        "Country": "South Georgia and the South Sandwich Islands",
-        "Slug": "south-georgia-and-the-south-sandwich-islands",
-        "ISO2": "GS"
-    },
-    {
-        "Country": "Suriname",
-        "Slug": "suriname",
-        "ISO2": "SR"
-    },
-    {
-        "Country": "Andorra",
-        "Slug": "andorra",
-        "ISO2": "AD"
-    },
-    {
-        "Country": "Barbados",
-        "Slug": "barbados",
-        "ISO2": "BB"
-    },
-    {
-        "Country": "Norway",
-        "Slug": "norway",
-        "ISO2": "NO"
-    },
-    {
-        "Country": "Zambia",
-        "Slug": "zambia",
-        "ISO2": "ZM"
-    },
-    {
-        "Country": "Bosnia and Herzegovina",
-        "Slug": "bosnia-and-herzegovina",
-        "ISO2": "BA"
-    },
-    {
-        "Country": "Libya",
-        "Slug": "libya",
-        "ISO2": "LY"
-    },
-    {
-        "Country": "United States of America",
-        "Slug": "united-states",
-        "ISO2": "US"
-    },
-    {
-        "Country": "Bermuda",
-        "Slug": "bermuda",
-        "ISO2": "BM"
-    },
-    {
-        "Country": "Bulgaria",
-        "Slug": "bulgaria",
-        "ISO2": "BG"
-    },
-    {
-        "Country": "Cayman Islands",
-        "Slug": "cayman-islands",
-        "ISO2": "KY"
-    },
-    {
-        "Country": "Niue",
-        "Slug": "niue",
-        "ISO2": "NU"
-    },
-    {
-        "Country": "Czech Republic",
-        "Slug": "czech-republic",
-        "ISO2": "CZ"
-    },
-    {
-        "Country": "Maldives",
-        "Slug": "maldives",
-        "ISO2": "MV"
-    },
-    {
-        "Country": "Mayotte",
-        "Slug": "mayotte",
-        "ISO2": "YT"
-    },
-    {
-        "Country": "Netherlands",
-        "Slug": "netherlands",
-        "ISO2": "NL"
-    },
-    {
-        "Country": "Armenia",
-        "Slug": "armenia",
-        "ISO2": "AM"
-    },
-    {
-        "Country": "Burundi",
-        "Slug": "burundi",
-        "ISO2": "BI"
-    },
-    {
-        "Country": "Iceland",
-        "Slug": "iceland",
-        "ISO2": "IS"
-    },
-    {
-        "Country": "Mauritius",
-        "Slug": "mauritius",
-        "ISO2": "MU"
-    },
-    {
-        "Country": "Jamaica",
-        "Slug": "jamaica",
-        "ISO2": "JM"
-    },
-    {
-        "Country": "Marshall Islands",
-        "Slug": "marshall-islands",
-        "ISO2": "MH"
-    },
-    {
-        "Country": "South Sudan",
-        "Slug": "south-sudan",
-        "ISO2": "SS"
-    },
-    {
-        "Country": "Taiwan, Republic of China",
-        "Slug": "taiwan",
-        "ISO2": "TW"
-    },
-    {
-        "Country": "Turks and Caicos Islands",
-        "Slug": "turks-and-caicos-islands",
-        "ISO2": "TC"
-    },
-    {
-        "Country": "Swaziland",
-        "Slug": "swaziland",
-        "ISO2": "SZ"
-    },
-    {
-        "Country": "Wallis and Futuna Islands",
-        "Slug": "wallis-and-futuna-islands",
-        "ISO2": "WF"
-    },
-    {
-        "Country": "Croatia",
-        "Slug": "croatia",
-        "ISO2": "HR"
-    },
-    {
-        "Country": "El Salvador",
-        "Slug": "el-salvador",
-        "ISO2": "SV"
-    },
-    {
-        "Country": "Germany",
-        "Slug": "germany",
-        "ISO2": "DE"
-    },
-    {
-        "Country": "Guyana",
-        "Slug": "guyana",
-        "ISO2": "GY"
-    },
-    {
-        "Country": "Kyrgyzstan",
-        "Slug": "kyrgyzstan",
-        "ISO2": "KG"
-    },
-    {
-        "Country": "Liechtenstein",
-        "Slug": "liechtenstein",
-        "ISO2": "LI"
-    },
-    {
-        "Country": "French Southern Territories",
-        "Slug": "french-southern-territories",
-        "ISO2": "TF"
-    },
-    {
-        "Country": "Liberia",
-        "Slug": "liberia",
-        "ISO2": "LR"
-    },
-    {
-        "Country": "Mexico",
-        "Slug": "mexico",
-        "ISO2": "MX"
-    },
-    {
-        "Country": "Saint Vincent and Grenadines",
-        "Slug": "saint-vincent-and-the-grenadines",
-        "ISO2": "VC"
-    },
-    {
-        "Country": "Kenya",
-        "Slug": "kenya",
-        "ISO2": "KE"
-    },
-    {
-        "Country": "New Caledonia",
-        "Slug": "new-caledonia",
-        "ISO2": "NC"
-    },
-    {
-        "Country": "Saint-Martin (French part)",
-        "Slug": "saint-martin-french-part",
-        "ISO2": "MF"
-    },
-    {
-        "Country": "Seychelles",
-        "Slug": "seychelles",
-        "ISO2": "SC"
-    },
-    {
-        "Country": "Eritrea",
-        "Slug": "eritrea",
-        "ISO2": "ER"
-    },
-    {
-        "Country": "Faroe Islands",
-        "Slug": "faroe-islands",
-        "ISO2": "FO"
-    },
-    {
-        "Country": "Ghana",
-        "Slug": "ghana",
-        "ISO2": "GH"
-    },
-    {
-        "Country": "Honduras",
-        "Slug": "honduras",
-        "ISO2": "HN"
-    },
-    {
-        "Country": "India",
-        "Slug": "india",
-        "ISO2": "IN"
-    },
-    {
-        "Country": "Netherlands Antilles",
-        "Slug": "netherlands-antilles",
-        "ISO2": "AN"
-    },
-    {
-        "Country": "Bangladesh",
-        "Slug": "bangladesh",
-        "ISO2": "BD"
-    },
-    {
-        "Country": "French Polynesia",
-        "Slug": "french-polynesia",
-        "ISO2": "PF"
-    },
-    {
-        "Country": "Madagascar",
-        "Slug": "madagascar",
-        "ISO2": "MG"
-    },
-    {
-        "Country": "Sweden",
-        "Slug": "sweden",
-        "ISO2": "SE"
-    },
-    {
-        "Country": "Malawi",
-        "Slug": "malawi",
-        "ISO2": "MW"
-    },
-    {
-        "Country": "Norfolk Island",
-        "Slug": "norfolk-island",
-        "ISO2": "NF"
-    },
-    {
-        "Country": "Qatar",
-        "Slug": "qatar",
-        "ISO2": "QA"
-    },
-    {
-        "Country": "United Arab Emirates",
-        "Slug": "united-arab-emirates",
-        "ISO2": "AE"
-    },
-    {
-        "Country": "Colombia",
-        "Slug": "colombia",
-        "ISO2": "CO"
-    },
-    {
-        "Country": "Lithuania",
-        "Slug": "lithuania",
-        "ISO2": "LT"
-    },
-    {
-        "Country": "Namibia",
-        "Slug": "namibia",
-        "ISO2": "NA"
-    },
-    {
-        "Country": "Montserrat",
-        "Slug": "montserrat",
-        "ISO2": "MS"
-    },
-    {
-        "Country": "Oman",
-        "Slug": "oman",
-        "ISO2": "OM"
-    },
-    {
-        "Country": "Russian Federation",
-        "Slug": "russia",
-        "ISO2": "RU"
-    },
-    {
-        "Country": "Singapore",
-        "Slug": "singapore",
-        "ISO2": "SG"
-    },
-    {
-        "Country": "Burkina Faso",
-        "Slug": "burkina-faso",
-        "ISO2": "BF"
-    },
-    {
-        "Country": "Mauritania",
-        "Slug": "mauritania",
-        "ISO2": "MR"
-    },
-    {
-        "Country": "Panama",
-        "Slug": "panama",
-        "ISO2": "PA"
-    },
-    {
-        "Country": "Saint Kitts and Nevis",
-        "Slug": "saint-kitts-and-nevis",
-        "ISO2": "KN"
-    },
-    {
-        "Country": "Tunisia",
-        "Slug": "tunisia",
-        "ISO2": "TN"
-    },
-    {
-        "Country": "Antigua and Barbuda",
-        "Slug": "antigua-and-barbuda",
-        "ISO2": "AG"
-    },
-    {
-        "Country": "Bolivia",
-        "Slug": "bolivia",
-        "ISO2": "BO"
-    },
-    {
-        "Country": "British Virgin Islands",
-        "Slug": "british-virgin-islands",
-        "ISO2": "VG"
-    },
-    {
-        "Country": "Samoa",
-        "Slug": "samoa",
-        "ISO2": "WS"
-    },
-    {
-        "Country": "Korea (South)",
-        "Slug": "korea-south",
-        "ISO2": "KR"
-    },
-    {
-        "Country": "Japan",
-        "Slug": "japan",
-        "ISO2": "JP"
-    },
-    {
-        "Country": "Mongolia",
-        "Slug": "mongolia",
-        "ISO2": "MN"
-    },
-    {
-        "Country": "Cyprus",
-        "Slug": "cyprus",
-        "ISO2": "CY"
-    },
-    {
-        "Country": "Vanuatu",
-        "Slug": "vanuatu",
-        "ISO2": "VU"
-    },
-    {
-        "Country": "Cape Verde",
-        "Slug": "cape-verde",
-        "ISO2": "CV"
-    },
-    {
-        "Country": "Cook Islands",
-        "Slug": "cook-islands",
-        "ISO2": "CK"
-    },
-    {
-        "Country": "Malaysia",
-        "Slug": "malaysia",
-        "ISO2": "MY"
-    },
-    {
-        "Country": "Nauru",
-        "Slug": "nauru",
-        "ISO2": "NR"
-    },
-    {
-        "Country": "Belarus",
-        "Slug": "belarus",
-        "ISO2": "BY"
-    },
-    {
-        "Country": "New Zealand",
-        "Slug": "new-zealand",
-        "ISO2": "NZ"
-    },
-    {
-        "Country": "Réunion",
-        "Slug": "réunion",
-        "ISO2": "RE"
-    },
-    {
-        "Country": "Switzerland",
-        "Slug": "switzerland",
-        "ISO2": "CH"
-    },
-    {
-        "Country": "Venezuela (Bolivarian Republic)",
-        "Slug": "venezuela",
-        "ISO2": "VE"
-    },
-    {
-        "Country": "China",
-        "Slug": "china",
-        "ISO2": "CN"
-    },
-    {
-        "Country": "Guinea",
-        "Slug": "guinea",
-        "ISO2": "GN"
-    },
-    {
-        "Country": "Heard and Mcdonald Islands",
-        "Slug": "heard-and-mcdonald-islands",
-        "ISO2": "HM"
-    },
-    {
-        "Country": "Tuvalu",
-        "Slug": "tuvalu",
-        "ISO2": "TV"
-    },
-    {
-        "Country": "Uruguay",
-        "Slug": "uruguay",
-        "ISO2": "UY"
-    },
-    {
-        "Country": "Sudan",
-        "Slug": "sudan",
-        "ISO2": "SD"
-    },
-    {
-        "Country": "Christmas Island",
-        "Slug": "christmas-island",
-        "ISO2": "CX"
-    },
-    {
-        "Country": "Falkland Islands (Malvinas)",
-        "Slug": "falkland-islands-malvinas",
-        "ISO2": "FK"
-    },
-    {
-        "Country": "Hong Kong, SAR China",
-        "Slug": "hong-kong-sar-china",
-        "ISO2": "HK"
-    },
-    {
-        "Country": "Serbia",
-        "Slug": "serbia",
-        "ISO2": "RS"
-    },
-    {
-        "Country": "Sierra Leone",
-        "Slug": "sierra-leone",
-        "ISO2": "SL"
-    },
-    {
-        "Country": "South Africa",
-        "Slug": "south-africa",
-        "ISO2": "ZA"
-    },
-    {
-        "Country": "Svalbard and Jan Mayen Islands",
-        "Slug": "svalbard-and-jan-mayen-islands",
-        "ISO2": "SJ"
-    },
-    {
-        "Country": "Holy See (Vatican City State)",
-        "Slug": "holy-see-vatican-city-state",
-        "ISO2": "VA"
+        "Country": "ALA Aland Islands",
+        "CountryCode": "AX",
+        "Slug": "ala-aland-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
         "Country": "Afghanistan",
+        "CountryCode": "AF",
         "Slug": "afghanistan",
-        "ISO2": "AF"
+        "NewConfirmed": 68,
+        "TotalConfirmed": 1531,
+        "NewDeaths": 3,
+        "TotalDeaths": 50,
+        "NewRecovered": 19,
+        "TotalRecovered": 207,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
-        "Country": "Bahrain",
-        "Slug": "bahrain",
-        "ISO2": "BH"
-    },
-    {
-        "Country": "Central African Republic",
-        "Slug": "central-african-republic",
-        "ISO2": "CF"
-    },
-    {
-        "Country": "Viet Nam",
-        "Slug": "vietnam",
-        "ISO2": "VN"
-    },
-    {
-        "Country": "Kuwait",
-        "Slug": "kuwait",
-        "ISO2": "KW"
-    },
-    {
-        "Country": "Greece",
-        "Slug": "greece",
-        "ISO2": "GR"
-    },
-    {
-        "Country": "ALA Aland Islands",
-        "Slug": "ala-aland-islands",
-        "ISO2": "AX"
-    },
-    {
-        "Country": "Haiti",
-        "Slug": "haiti",
-        "ISO2": "HT"
-    },
-    {
-        "Country": "Mali",
-        "Slug": "mali",
-        "ISO2": "ML"
-    },
-    {
-        "Country": "Somalia",
-        "Slug": "somalia",
-        "ISO2": "SO"
-    },
-    {
-        "Country": "Anguilla",
-        "Slug": "anguilla",
-        "ISO2": "AI"
-    },
-    {
-        "Country": "Indonesia",
-        "Slug": "indonesia",
-        "ISO2": "ID"
-    },
-    {
-        "Country": "Congo (Kinshasa)",
-        "Slug": "congo-kinshasa",
-        "ISO2": "CD"
-    },
-    {
-        "Country": "Ecuador",
-        "Slug": "ecuador",
-        "ISO2": "EC"
-    },
-    {
-        "Country": "Ireland",
-        "Slug": "ireland",
-        "ISO2": "IE"
-    },
-    {
-        "Country": "Poland",
-        "Slug": "poland",
-        "ISO2": "PL"
-    },
-    {
-        "Country": "Turkmenistan",
-        "Slug": "turkmenistan",
-        "ISO2": "TM"
-    },
-    {
-        "Country": "Israel",
-        "Slug": "israel",
-        "ISO2": "IL"
-    },
-    {
-        "Country": "Jordan",
-        "Slug": "jordan",
-        "ISO2": "JO"
-    },
-    {
-        "Country": "Lebanon",
-        "Slug": "lebanon",
-        "ISO2": "LB"
-    },
-    {
-        "Country": "Lesotho",
-        "Slug": "lesotho",
-        "ISO2": "LS"
-    },
-    {
-        "Country": "Pakistan",
-        "Slug": "pakistan",
-        "ISO2": "PK"
-    },
-    {
-        "Country": "Saudi Arabia",
-        "Slug": "saudi-arabia",
-        "ISO2": "SA"
-    },
-    {
-        "Country": "Guinea-Bissau",
-        "Slug": "guinea-bissau",
-        "ISO2": "GW"
-    },
-    {
-        "Country": "Hungary",
-        "Slug": "hungary",
-        "ISO2": "HU"
-    },
-    {
-        "Country": "Romania",
-        "Slug": "romania",
-        "ISO2": "RO"
-    },
-    {
-        "Country": "Turkey",
-        "Slug": "turkey",
-        "ISO2": "TR"
-    },
-    {
-        "Country": "Luxembourg",
-        "Slug": "luxembourg",
-        "ISO2": "LU"
-    },
-    {
-        "Country": "Macao, SAR China",
-        "Slug": "macao-sar-china",
-        "ISO2": "MO"
-    },
-    {
-        "Country": "Syrian Arab Republic (Syria)",
-        "Slug": "syria",
-        "ISO2": "SY"
-    },
-    {
-        "Country": "Uzbekistan",
-        "Slug": "uzbekistan",
-        "ISO2": "UZ"
-    },
-    {
-        "Country": "Tanzania, United Republic of",
-        "Slug": "tanzania",
-        "ISO2": "TZ"
-    },
-    {
-        "Country": "Tonga",
-        "Slug": "tonga",
-        "ISO2": "TO"
-    },
-    {
-        "Country": "US Minor Outlying Islands",
-        "Slug": "us-minor-outlying-islands",
-        "ISO2": "UM"
-    },
-    {
-        "Country": "Dominica",
-        "Slug": "dominica",
-        "ISO2": "DM"
-    },
-    {
-        "Country": "Martinique",
-        "Slug": "martinique",
-        "ISO2": "MQ"
-    },
-    {
-        "Country": "Moldova",
-        "Slug": "moldova",
-        "ISO2": "MD"
-    },
-    {
-        "Country": "Slovakia",
-        "Slug": "slovakia",
-        "ISO2": "SK"
-    },
-    {
-        "Country": "Sri Lanka",
-        "Slug": "sri-lanka",
-        "ISO2": "LK"
-    },
-    {
-        "Country": "Angola",
-        "Slug": "angola",
-        "ISO2": "AO"
-    },
-    {
-        "Country": "Argentina",
-        "Slug": "argentina",
-        "ISO2": "AR"
-    },
-    {
-        "Country": "Egypt",
-        "Slug": "egypt",
-        "ISO2": "EG"
-    },
-    {
-        "Country": "Equatorial Guinea",
-        "Slug": "equatorial-guinea",
-        "ISO2": "GQ"
-    },
-    {
-        "Country": "Guatemala",
-        "Slug": "guatemala",
-        "ISO2": "GT"
-    },
-    {
-        "Country": "Thailand",
-        "Slug": "thailand",
-        "ISO2": "TH"
-    },
-    {
-        "Country": "Western Sahara",
-        "Slug": "western-sahara",
-        "ISO2": "EH"
-    },
-    {
-        "Country": "Guernsey",
-        "Slug": "guernsey",
-        "ISO2": "GG"
-    },
-    {
-        "Country": "Republic of Kosovo",
-        "Slug": "kosovo",
-        "ISO2": "XK"
-    },
-    {
-        "Country": "Finland",
-        "Slug": "finland",
-        "ISO2": "FI"
-    },
-    {
-        "Country": "Guam",
-        "Slug": "guam",
-        "ISO2": "GU"
-    },
-    {
-        "Country": "Iran, Islamic Republic of",
-        "Slug": "iran",
-        "ISO2": "IR"
-    },
-    {
-        "Country": "Kiribati",
-        "Slug": "kiribati",
-        "ISO2": "KI"
-    },
-    {
-        "Country": "Micronesia, Federated States of",
-        "Slug": "micronesia",
-        "ISO2": "FM"
-    },
-    {
-        "Country": "Tajikistan",
-        "Slug": "tajikistan",
-        "ISO2": "TJ"
-    },
-    {
-        "Country": "Macedonia, Republic of",
-        "Slug": "macedonia",
-        "ISO2": "MK"
-    },
-    {
-        "Country": "Myanmar",
-        "Slug": "myanmar",
-        "ISO2": "MM"
-    },
-    {
-        "Country": "Paraguay",
-        "Slug": "paraguay",
-        "ISO2": "PY"
-    },
-    {
-        "Country": "Botswana",
-        "Slug": "botswana",
-        "ISO2": "BW"
-    },
-    {
-        "Country": "Brunei Darussalam",
-        "Slug": "brunei",
-        "ISO2": "BN"
-    },
-    {
-        "Country": "Cameroon",
-        "Slug": "cameroon",
-        "ISO2": "CM"
-    },
-    {
-        "Country": "French Guiana",
-        "Slug": "french-guiana",
-        "ISO2": "GF"
-    },
-    {
-        "Country": "Gambia",
-        "Slug": "gambia",
-        "ISO2": "GM"
-    },
-    {
-        "Country": "Kazakhstan",
-        "Slug": "kazakhstan",
-        "ISO2": "KZ"
+        "Country": "Albania",
+        "CountryCode": "AL",
+        "Slug": "albania",
+        "NewConfirmed": 14,
+        "TotalConfirmed": 726,
+        "NewDeaths": 1,
+        "TotalDeaths": 28,
+        "NewRecovered": 7,
+        "TotalRecovered": 410,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
         "Country": "Algeria",
+        "CountryCode": "DZ",
         "Slug": "algeria",
-        "ISO2": "DZ"
+        "NewConfirmed": 126,
+        "TotalConfirmed": 3382,
+        "NewDeaths": 6,
+        "TotalDeaths": 425,
+        "NewRecovered": 29,
+        "TotalRecovered": 1508,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "American Samoa",
+        "CountryCode": "AS",
+        "Slug": "american-samoa",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Andorra",
+        "CountryCode": "AD",
+        "Slug": "andorra",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 738,
+        "NewDeaths": 0,
+        "TotalDeaths": 40,
+        "NewRecovered": 0,
+        "TotalRecovered": 344,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Angola",
+        "CountryCode": "AO",
+        "Slug": "angola",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 26,
+        "NewDeaths": 0,
+        "TotalDeaths": 2,
+        "NewRecovered": 0,
+        "TotalRecovered": 6,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Anguilla",
+        "CountryCode": "AI",
+        "Slug": "anguilla",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Antarctica",
+        "CountryCode": "AQ",
+        "Slug": "antarctica",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Antigua and Barbuda",
+        "CountryCode": "AG",
+        "Slug": "antigua-and-barbuda",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 24,
+        "NewDeaths": 0,
+        "TotalDeaths": 3,
+        "NewRecovered": 0,
+        "TotalRecovered": 11,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Argentina",
+        "CountryCode": "AR",
+        "Slug": "argentina",
+        "NewConfirmed": 112,
+        "TotalConfirmed": 3892,
+        "NewDeaths": 7,
+        "TotalDeaths": 192,
+        "NewRecovered": 77,
+        "TotalRecovered": 1107,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Armenia",
+        "CountryCode": "AM",
+        "Slug": "armenia",
+        "NewConfirmed": 69,
+        "TotalConfirmed": 1746,
+        "NewDeaths": 0,
+        "TotalDeaths": 28,
+        "NewRecovered": 30,
+        "TotalRecovered": 833,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Aruba",
+        "CountryCode": "AW",
+        "Slug": "aruba",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Australia",
+        "CountryCode": "AU",
+        "Slug": "australia",
+        "NewConfirmed": 20,
+        "TotalConfirmed": 6714,
+        "NewDeaths": 3,
+        "TotalDeaths": 83,
+        "NewRecovered": 1318,
+        "TotalRecovered": 5541,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Austria",
+        "CountryCode": "AT",
+        "Slug": "austria",
+        "NewConfirmed": 77,
+        "TotalConfirmed": 15225,
+        "NewDeaths": 6,
+        "TotalDeaths": 542,
+        "NewRecovered": 179,
+        "TotalRecovered": 12282,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Azerbaijan",
+        "CountryCode": "AZ",
+        "Slug": "azerbaijan",
+        "NewConfirmed": 28,
+        "TotalConfirmed": 1645,
+        "NewDeaths": 0,
+        "TotalDeaths": 21,
+        "NewRecovered": 59,
+        "TotalRecovered": 1139,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bahamas",
+        "CountryCode": "BS",
+        "Slug": "bahamas",
+        "NewConfirmed": 2,
+        "TotalConfirmed": 80,
+        "NewDeaths": 0,
+        "TotalDeaths": 11,
+        "NewRecovered": 7,
+        "TotalRecovered": 22,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bahrain",
+        "CountryCode": "BH",
+        "Slug": "bahrain",
+        "NewConfirmed": 59,
+        "TotalConfirmed": 2647,
+        "NewDeaths": 0,
+        "TotalDeaths": 8,
+        "NewRecovered": 29,
+        "TotalRecovered": 1189,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bangladesh",
+        "CountryCode": "BD",
+        "Slug": "bangladesh",
+        "NewConfirmed": 418,
+        "TotalConfirmed": 5416,
+        "NewDeaths": 5,
+        "TotalDeaths": 145,
+        "NewRecovered": 9,
+        "TotalRecovered": 122,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Barbados",
+        "CountryCode": "BB",
+        "Slug": "barbados",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 79,
+        "NewDeaths": 0,
+        "TotalDeaths": 6,
+        "NewRecovered": 8,
+        "TotalRecovered": 39,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Belarus",
+        "CountryCode": "BY",
+        "Slug": "belarus",
+        "NewConfirmed": 873,
+        "TotalConfirmed": 10463,
+        "NewDeaths": 5,
+        "TotalDeaths": 72,
+        "NewRecovered": 122,
+        "TotalRecovered": 1695,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Belgium",
+        "CountryCode": "BE",
+        "Slug": "belgium",
+        "NewConfirmed": 809,
+        "TotalConfirmed": 46134,
+        "NewDeaths": 177,
+        "TotalDeaths": 7094,
+        "NewRecovered": 368,
+        "TotalRecovered": 10785,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Belize",
+        "CountryCode": "BZ",
+        "Slug": "belize",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 18,
+        "NewDeaths": 0,
+        "TotalDeaths": 2,
+        "NewRecovered": 0,
+        "TotalRecovered": 5,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Benin",
+        "CountryCode": "BJ",
+        "Slug": "benin",
+        "NewConfirmed": 10,
+        "TotalConfirmed": 64,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 6,
+        "TotalRecovered": 33,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bermuda",
+        "CountryCode": "BM",
+        "Slug": "bermuda",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bhutan",
+        "CountryCode": "BT",
+        "Slug": "bhutan",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 7,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 1,
+        "TotalRecovered": 4,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bolivia",
+        "CountryCode": "BO",
+        "Slug": "bolivia",
+        "NewConfirmed": 84,
+        "TotalConfirmed": 950,
+        "NewDeaths": 4,
+        "TotalDeaths": 50,
+        "NewRecovered": 26,
+        "TotalRecovered": 80,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bosnia and Herzegovina",
+        "CountryCode": "BA",
+        "Slug": "bosnia-and-herzegovina",
+        "NewConfirmed": 30,
+        "TotalConfirmed": 1516,
+        "NewDeaths": 2,
+        "TotalDeaths": 59,
+        "NewRecovered": 32,
+        "TotalRecovered": 624,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Botswana",
+        "CountryCode": "BW",
+        "Slug": "botswana",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 22,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bouvet Island",
+        "CountryCode": "BV",
+        "Slug": "bouvet-island",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Brazil",
+        "CountryCode": "BR",
+        "Slug": "brazil",
+        "NewConfirmed": 3776,
+        "TotalConfirmed": 63100,
+        "NewDeaths": 229,
+        "TotalDeaths": 4286,
+        "NewRecovered": 992,
+        "TotalRecovered": 30152,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "British Indian Ocean Territory",
+        "CountryCode": "IO",
+        "Slug": "british-indian-ocean-territory",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "British Virgin Islands",
+        "CountryCode": "VG",
+        "Slug": "british-virgin-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Brunei Darussalam",
+        "CountryCode": "BN",
+        "Slug": "brunei",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 138,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 2,
+        "TotalRecovered": 123,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Bulgaria",
+        "CountryCode": "BG",
+        "Slug": "bulgaria",
+        "NewConfirmed": 53,
+        "TotalConfirmed": 1300,
+        "NewDeaths": 1,
+        "TotalDeaths": 56,
+        "NewRecovered": 8,
+        "TotalRecovered": 205,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Burkina Faso",
+        "CountryCode": "BF",
+        "Slug": "burkina-faso",
+        "NewConfirmed": 3,
+        "TotalConfirmed": 632,
+        "NewDeaths": 1,
+        "TotalDeaths": 42,
+        "NewRecovered": 11,
+        "TotalRecovered": 453,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Burundi",
+        "CountryCode": "BI",
+        "Slug": "burundi",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 11,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 4,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cambodia",
+        "CountryCode": "KH",
+        "Slug": "cambodia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 122,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 117,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cameroon",
+        "CountryCode": "CM",
+        "Slug": "cameroon",
+        "NewConfirmed": 103,
+        "TotalConfirmed": 1621,
+        "NewDeaths": 3,
+        "TotalDeaths": 56,
+        "NewRecovered": 89,
+        "TotalRecovered": 786,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Canada",
+        "CountryCode": "CA",
+        "Slug": "canada",
+        "NewConfirmed": 1654,
+        "TotalConfirmed": 47145,
+        "NewDeaths": 114,
+        "TotalDeaths": 2660,
+        "NewRecovered": 870,
+        "TotalRecovered": 16883,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cape Verde",
+        "CountryCode": "CV",
+        "Slug": "cape-verde",
+        "NewConfirmed": 16,
+        "TotalConfirmed": 106,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 1,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cayman Islands",
+        "CountryCode": "KY",
+        "Slug": "cayman-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Central African Republic",
+        "CountryCode": "CF",
+        "Slug": "central-african-republic",
+        "NewConfirmed": 3,
+        "TotalConfirmed": 19,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 10,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Chad",
+        "CountryCode": "TD",
+        "Slug": "chad",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 46,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 15,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Chile",
+        "CountryCode": "CL",
+        "Slug": "chile",
+        "NewConfirmed": 473,
+        "TotalConfirmed": 13331,
+        "NewDeaths": 8,
+        "TotalDeaths": 189,
+        "NewRecovered": 278,
+        "TotalRecovered": 7024,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "China",
+        "CountryCode": "CN",
+        "Slug": "china",
+        "NewConfirmed": 3,
+        "TotalConfirmed": 83912,
+        "NewDeaths": 1,
+        "TotalDeaths": 4637,
+        "NewRecovered": 102,
+        "TotalRecovered": 78277,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Christmas Island",
+        "CountryCode": "CX",
+        "Slug": "christmas-island",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cocos (Keeling) Islands",
+        "CountryCode": "CC",
+        "Slug": "cocos-keeling-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Colombia",
+        "CountryCode": "CO",
+        "Slug": "colombia",
+        "NewConfirmed": 237,
+        "TotalConfirmed": 5379,
+        "NewDeaths": 11,
+        "TotalDeaths": 244,
+        "NewRecovered": 66,
+        "TotalRecovered": 1133,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Comoros",
+        "CountryCode": "KM",
+        "Slug": "comoros",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Congo (Brazzaville)",
+        "CountryCode": "CG",
+        "Slug": "congo-brazzaville",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 200,
+        "NewDeaths": 0,
+        "TotalDeaths": 6,
+        "NewRecovered": 0,
+        "TotalRecovered": 19,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Congo (Kinshasa)",
+        "CountryCode": "CD",
+        "Slug": "congo-kinshasa",
+        "NewConfirmed": 26,
+        "TotalConfirmed": 442,
+        "NewDeaths": 0,
+        "TotalDeaths": 28,
+        "NewRecovered": 1,
+        "TotalRecovered": 50,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cook Islands",
+        "CountryCode": "CK",
+        "Slug": "cook-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Costa Rica",
+        "CountryCode": "CR",
+        "Slug": "costa-rica",
+        "NewConfirmed": 2,
+        "TotalConfirmed": 695,
+        "NewDeaths": 0,
+        "TotalDeaths": 6,
+        "NewRecovered": 22,
+        "TotalRecovered": 264,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Croatia",
+        "CountryCode": "HR",
+        "Slug": "croatia",
+        "NewConfirmed": 14,
+        "TotalConfirmed": 2030,
+        "NewDeaths": 1,
+        "TotalDeaths": 55,
+        "NewRecovered": 69,
+        "TotalRecovered": 1103,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cuba",
+        "CountryCode": "CU",
+        "Slug": "cuba",
+        "NewConfirmed": 32,
+        "TotalConfirmed": 1369,
+        "NewDeaths": 3,
+        "TotalDeaths": 54,
+        "NewRecovered": 64,
+        "TotalRecovered": 501,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Cyprus",
+        "CountryCode": "CY",
+        "Slug": "cyprus",
+        "NewConfirmed": 7,
+        "TotalConfirmed": 817,
+        "NewDeaths": 0,
+        "TotalDeaths": 14,
+        "NewRecovered": 0,
+        "TotalRecovered": 148,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Czech Republic",
+        "CountryCode": "CZ",
+        "Slug": "czech-republic",
+        "NewConfirmed": 52,
+        "TotalConfirmed": 7404,
+        "NewDeaths": 2,
+        "TotalDeaths": 220,
+        "NewRecovered": 92,
+        "TotalRecovered": 2545,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Côte d'Ivoire",
+        "CountryCode": "CI",
+        "Slug": "cote-divoire",
+        "NewConfirmed": 73,
+        "TotalConfirmed": 1150,
+        "NewDeaths": 0,
+        "TotalDeaths": 14,
+        "NewRecovered": 49,
+        "TotalRecovered": 468,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Denmark",
+        "CountryCode": "DK",
+        "Slug": "denmark",
+        "NewConfirmed": 130,
+        "TotalConfirmed": 8773,
+        "NewDeaths": 4,
+        "TotalDeaths": 422,
+        "NewRecovered": 136,
+        "TotalRecovered": 5994,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
         "Country": "Djibouti",
+        "CountryCode": "DJ",
         "Slug": "djibouti",
-        "ISO2": "DJ"
+        "NewConfirmed": 15,
+        "TotalConfirmed": 1023,
+        "NewDeaths": 0,
+        "TotalDeaths": 2,
+        "NewRecovered": 38,
+        "TotalRecovered": 411,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Dominica",
+        "CountryCode": "DM",
+        "Slug": "dominica",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 16,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 13,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Dominican Republic",
+        "CountryCode": "DO",
+        "Slug": "dominican-republic",
+        "NewConfirmed": 209,
+        "TotalConfirmed": 6135,
+        "NewDeaths": 5,
+        "TotalDeaths": 278,
+        "NewRecovered": 88,
+        "TotalRecovered": 910,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Ecuador",
+        "CountryCode": "EC",
+        "Slug": "ecuador",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 22719,
+        "NewDeaths": 0,
+        "TotalDeaths": 576,
+        "NewRecovered": 0,
+        "TotalRecovered": 1366,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Egypt",
+        "CountryCode": "EG",
+        "Slug": "egypt",
+        "NewConfirmed": 215,
+        "TotalConfirmed": 4534,
+        "NewDeaths": 10,
+        "TotalDeaths": 317,
+        "NewRecovered": 62,
+        "TotalRecovered": 1176,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "El Salvador",
+        "CountryCode": "SV",
+        "Slug": "el-salvador",
+        "NewConfirmed": 24,
+        "TotalConfirmed": 298,
+        "NewDeaths": 0,
+        "TotalDeaths": 8,
+        "NewRecovered": 8,
+        "TotalRecovered": 83,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Equatorial Guinea",
+        "CountryCode": "GQ",
+        "Slug": "equatorial-guinea",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 258,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 1,
+        "TotalRecovered": 8,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Eritrea",
+        "CountryCode": "ER",
+        "Slug": "eritrea",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 39,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 13,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Estonia",
+        "CountryCode": "EE",
+        "Slug": "estonia",
+        "NewConfirmed": 8,
+        "TotalConfirmed": 1643,
+        "NewDeaths": 3,
+        "TotalDeaths": 49,
+        "NewRecovered": 5,
+        "TotalRecovered": 233,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Ethiopia",
+        "CountryCode": "ET",
+        "Slug": "ethiopia",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 123,
+        "NewDeaths": 0,
+        "TotalDeaths": 3,
+        "NewRecovered": 12,
+        "TotalRecovered": 41,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Falkland Islands (Malvinas)",
+        "CountryCode": "FK",
+        "Slug": "falkland-islands-malvinas",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Faroe Islands",
+        "CountryCode": "FO",
+        "Slug": "faroe-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Fiji",
+        "CountryCode": "FJ",
+        "Slug": "fiji",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 18,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 2,
+        "TotalRecovered": 12,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Finland",
+        "CountryCode": "FI",
+        "Slug": "finland",
+        "NewConfirmed": 101,
+        "TotalConfirmed": 4576,
+        "NewDeaths": 4,
+        "TotalDeaths": 190,
+        "NewRecovered": 0,
+        "TotalRecovered": 2500,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "France",
+        "CountryCode": "FR",
+        "Slug": "france",
+        "NewConfirmed": 576,
+        "TotalConfirmed": 162220,
+        "NewDeaths": 242,
+        "TotalDeaths": 22890,
+        "NewRecovered": 309,
+        "TotalRecovered": 45681,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "French Guiana",
+        "CountryCode": "GF",
+        "Slug": "french-guiana",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "French Polynesia",
+        "CountryCode": "PF",
+        "Slug": "french-polynesia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "French Southern Territories",
+        "CountryCode": "TF",
+        "Slug": "french-southern-territories",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Gabon",
+        "CountryCode": "GA",
+        "Slug": "gabon",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 176,
+        "NewDeaths": 0,
+        "TotalDeaths": 3,
+        "NewRecovered": 0,
+        "TotalRecovered": 30,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Gambia",
+        "CountryCode": "GM",
+        "Slug": "gambia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 10,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 8,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Georgia",
+        "CountryCode": "GE",
+        "Slug": "georgia",
+        "NewConfirmed": 30,
+        "TotalConfirmed": 486,
+        "NewDeaths": 1,
+        "TotalDeaths": 6,
+        "NewRecovered": 10,
+        "TotalRecovered": 149,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Germany",
+        "CountryCode": "DE",
+        "Slug": "germany",
+        "NewConfirmed": 1257,
+        "TotalConfirmed": 157770,
+        "NewDeaths": 99,
+        "TotalDeaths": 5976,
+        "NewRecovered": 2200,
+        "TotalRecovered": 112000,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Ghana",
+        "CountryCode": "GH",
+        "Slug": "ghana",
+        "NewConfirmed": 271,
+        "TotalConfirmed": 1550,
+        "NewDeaths": 1,
+        "TotalDeaths": 11,
+        "NewRecovered": 21,
+        "TotalRecovered": 155,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Gibraltar",
+        "CountryCode": "GI",
+        "Slug": "gibraltar",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Greece",
+        "CountryCode": "GR",
+        "Slug": "greece",
+        "NewConfirmed": 11,
+        "TotalConfirmed": 2517,
+        "NewDeaths": 4,
+        "TotalDeaths": 134,
+        "NewRecovered": 0,
+        "TotalRecovered": 577,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Greenland",
+        "CountryCode": "GL",
+        "Slug": "greenland",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Grenada",
+        "CountryCode": "GD",
+        "Slug": "grenada",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 18,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 7,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Guadeloupe",
+        "CountryCode": "GP",
+        "Slug": "guadeloupe",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Guam",
+        "CountryCode": "GU",
+        "Slug": "guam",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Guatemala",
+        "CountryCode": "GT",
+        "Slug": "guatemala",
+        "NewConfirmed": 27,
+        "TotalConfirmed": 500,
+        "NewDeaths": 2,
+        "TotalDeaths": 15,
+        "NewRecovered": 4,
+        "TotalRecovered": 49,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Guernsey",
+        "CountryCode": "GG",
+        "Slug": "guernsey",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Guinea",
+        "CountryCode": "GN",
+        "Slug": "guinea",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 996,
+        "NewDeaths": 0,
+        "TotalDeaths": 7,
+        "NewRecovered": 0,
+        "TotalRecovered": 208,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Guinea-Bissau",
+        "CountryCode": "GW",
+        "Slug": "guinea-bissau",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 53,
+        "NewDeaths": 1,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 3,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Guyana",
+        "CountryCode": "GY",
+        "Slug": "guyana",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 74,
+        "NewDeaths": 1,
+        "TotalDeaths": 8,
+        "NewRecovered": 0,
+        "TotalRecovered": 12,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Haiti",
+        "CountryCode": "HT",
+        "Slug": "haiti",
+        "NewConfirmed": 2,
+        "TotalConfirmed": 74,
+        "NewDeaths": 0,
+        "TotalDeaths": 6,
+        "NewRecovered": 1,
+        "TotalRecovered": 7,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Heard and Mcdonald Islands",
+        "CountryCode": "HM",
+        "Slug": "heard-and-mcdonald-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Holy See (Vatican City State)",
+        "CountryCode": "VA",
+        "Slug": "holy-see-vatican-city-state",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 9,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 2,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Honduras",
+        "CountryCode": "HN",
+        "Slug": "honduras",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 627,
+        "NewDeaths": 0,
+        "TotalDeaths": 59,
+        "NewRecovered": 0,
+        "TotalRecovered": 65,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Hong Kong, SAR China",
+        "CountryCode": "HK",
+        "Slug": "hong-kong-sar-china",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Hungary",
+        "CountryCode": "HU",
+        "Slug": "hungary",
+        "NewConfirmed": 57,
+        "TotalConfirmed": 2500,
+        "NewDeaths": 10,
+        "TotalDeaths": 272,
+        "NewRecovered": 27,
+        "TotalRecovered": 485,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Iceland",
+        "CountryCode": "IS",
+        "Slug": "iceland",
+        "NewConfirmed": 2,
+        "TotalConfirmed": 1792,
+        "NewDeaths": 0,
+        "TotalDeaths": 10,
+        "NewRecovered": 38,
+        "TotalRecovered": 1608,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "India",
+        "CountryCode": "IN",
+        "Slug": "india",
+        "NewConfirmed": 1607,
+        "TotalConfirmed": 27890,
+        "NewDeaths": 56,
+        "TotalDeaths": 881,
+        "NewRecovered": 584,
+        "TotalRecovered": 6523,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Indonesia",
+        "CountryCode": "ID",
+        "Slug": "indonesia",
+        "NewConfirmed": 275,
+        "TotalConfirmed": 8882,
+        "NewDeaths": 23,
+        "TotalDeaths": 743,
+        "NewRecovered": 65,
+        "TotalRecovered": 1107,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Iran, Islamic Republic of",
+        "CountryCode": "IR",
+        "Slug": "iran",
+        "NewConfirmed": 1153,
+        "TotalConfirmed": 90481,
+        "NewDeaths": 60,
+        "TotalDeaths": 5710,
+        "NewRecovered": 1464,
+        "TotalRecovered": 69657,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Iraq",
+        "CountryCode": "IQ",
+        "Slug": "iraq",
+        "NewConfirmed": 57,
+        "TotalConfirmed": 1820,
+        "NewDeaths": 1,
+        "TotalDeaths": 87,
+        "NewRecovered": 39,
+        "TotalRecovered": 1263,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Ireland",
+        "CountryCode": "IE",
+        "Slug": "ireland",
+        "NewConfirmed": 701,
+        "TotalConfirmed": 19262,
+        "NewDeaths": 24,
+        "TotalDeaths": 1087,
+        "NewRecovered": 0,
+        "TotalRecovered": 9233,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Isle of Man",
+        "CountryCode": "IM",
+        "Slug": "isle-of-man",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Israel",
+        "CountryCode": "IL",
+        "Slug": "israel",
+        "NewConfirmed": 145,
+        "TotalConfirmed": 15443,
+        "NewDeaths": 2,
+        "TotalDeaths": 201,
+        "NewRecovered": 296,
+        "TotalRecovered": 6731,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Italy",
+        "CountryCode": "IT",
+        "Slug": "italy",
+        "NewConfirmed": 2324,
+        "TotalConfirmed": 197675,
+        "NewDeaths": 260,
+        "TotalDeaths": 26644,
+        "NewRecovered": 1808,
+        "TotalRecovered": 64928,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Jamaica",
+        "CountryCode": "JM",
+        "Slug": "jamaica",
+        "NewConfirmed": 45,
+        "TotalConfirmed": 350,
+        "NewDeaths": 0,
+        "TotalDeaths": 7,
+        "NewRecovered": 0,
+        "TotalRecovered": 28,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Japan",
+        "CountryCode": "JP",
+        "Slug": "japan",
+        "NewConfirmed": 210,
+        "TotalConfirmed": 13441,
+        "NewDeaths": 12,
+        "TotalDeaths": 372,
+        "NewRecovered": 153,
+        "TotalRecovered": 1809,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Jersey",
+        "CountryCode": "JE",
+        "Slug": "jersey",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Jordan",
+        "CountryCode": "JO",
+        "Slug": "jordan",
+        "NewConfirmed": 3,
+        "TotalConfirmed": 447,
+        "NewDeaths": 0,
+        "TotalDeaths": 7,
+        "NewRecovered": 5,
+        "TotalRecovered": 337,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Kazakhstan",
+        "CountryCode": "KZ",
+        "Slug": "kazakhstan",
+        "NewConfirmed": 116,
+        "TotalConfirmed": 2717,
+        "NewDeaths": 0,
+        "TotalDeaths": 25,
+        "NewRecovered": 36,
+        "TotalRecovered": 682,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Kenya",
+        "CountryCode": "KE",
+        "Slug": "kenya",
+        "NewConfirmed": 12,
+        "TotalConfirmed": 355,
+        "NewDeaths": 0,
+        "TotalDeaths": 14,
+        "NewRecovered": 8,
+        "TotalRecovered": 106,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Kiribati",
+        "CountryCode": "KI",
+        "Slug": "kiribati",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Korea (North)",
+        "CountryCode": "KP",
+        "Slug": "korea-north",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Korea (South)",
+        "CountryCode": "KR",
+        "Slug": "korea-south",
+        "NewConfirmed": 10,
+        "TotalConfirmed": 10738,
+        "NewDeaths": 1,
+        "TotalDeaths": 243,
+        "NewRecovered": 47,
+        "TotalRecovered": 8764,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Kuwait",
+        "CountryCode": "KW",
+        "Slug": "kuwait",
+        "NewConfirmed": 183,
+        "TotalConfirmed": 3075,
+        "NewDeaths": 1,
+        "TotalDeaths": 20,
+        "NewRecovered": 150,
+        "TotalRecovered": 806,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Kyrgyzstan",
+        "CountryCode": "KG",
+        "Slug": "kyrgyzstan",
+        "NewConfirmed": 17,
+        "TotalConfirmed": 682,
+        "NewDeaths": 0,
+        "TotalDeaths": 8,
+        "NewRecovered": 25,
+        "TotalRecovered": 370,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Lao PDR",
+        "CountryCode": "LA",
+        "Slug": "lao-pdr",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 19,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 7,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Latvia",
+        "CountryCode": "LV",
+        "Slug": "latvia",
+        "NewConfirmed": 8,
+        "TotalConfirmed": 812,
+        "NewDeaths": 0,
+        "TotalDeaths": 12,
+        "NewRecovered": 0,
+        "TotalRecovered": 267,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Lebanon",
+        "CountryCode": "LB",
+        "Slug": "lebanon",
+        "NewConfirmed": 3,
+        "TotalConfirmed": 707,
+        "NewDeaths": 0,
+        "TotalDeaths": 24,
+        "NewRecovered": 2,
+        "TotalRecovered": 145,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Lesotho",
+        "CountryCode": "LS",
+        "Slug": "lesotho",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Liberia",
+        "CountryCode": "LR",
+        "Slug": "liberia",
+        "NewConfirmed": 4,
+        "TotalConfirmed": 124,
+        "NewDeaths": 1,
+        "TotalDeaths": 12,
+        "NewRecovered": 0,
+        "TotalRecovered": 25,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Libya",
+        "CountryCode": "LY",
+        "Slug": "libya",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 61,
+        "NewDeaths": 0,
+        "TotalDeaths": 2,
+        "NewRecovered": 0,
+        "TotalRecovered": 18,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Liechtenstein",
+        "CountryCode": "LI",
+        "Slug": "liechtenstein",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 82,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 55,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Lithuania",
+        "CountryCode": "LT",
+        "Slug": "lithuania",
+        "NewConfirmed": 12,
+        "TotalConfirmed": 1438,
+        "NewDeaths": 0,
+        "TotalDeaths": 41,
+        "NewRecovered": 7,
+        "TotalRecovered": 467,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Luxembourg",
+        "CountryCode": "LU",
+        "Slug": "luxembourg",
+        "NewConfirmed": 12,
+        "TotalConfirmed": 3723,
+        "NewDeaths": 3,
+        "TotalDeaths": 88,
+        "NewRecovered": 16,
+        "TotalRecovered": 3104,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Macao, SAR China",
+        "CountryCode": "MO",
+        "Slug": "macao-sar-china",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Macedonia, Republic of",
+        "CountryCode": "MK",
+        "Slug": "macedonia",
+        "NewConfirmed": 19,
+        "TotalConfirmed": 1386,
+        "NewDeaths": 2,
+        "TotalDeaths": 61,
+        "NewRecovered": 126,
+        "TotalRecovered": 500,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Madagascar",
+        "CountryCode": "MG",
+        "Slug": "madagascar",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 124,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 9,
+        "TotalRecovered": 71,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Malawi",
+        "CountryCode": "MW",
+        "Slug": "malawi",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 34,
+        "NewDeaths": 0,
+        "TotalDeaths": 3,
+        "NewRecovered": 0,
+        "TotalRecovered": 4,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Malaysia",
+        "CountryCode": "MY",
+        "Slug": "malaysia",
+        "NewConfirmed": 38,
+        "TotalConfirmed": 5780,
+        "NewDeaths": 0,
+        "TotalDeaths": 98,
+        "NewRecovered": 100,
+        "TotalRecovered": 3862,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Maldives",
+        "CountryCode": "MV",
+        "Slug": "maldives",
+        "NewConfirmed": 37,
+        "TotalConfirmed": 214,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 17,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Mali",
+        "CountryCode": "ML",
+        "Slug": "mali",
+        "NewConfirmed": 19,
+        "TotalConfirmed": 389,
+        "NewDeaths": 2,
+        "TotalDeaths": 23,
+        "NewRecovered": 21,
+        "TotalRecovered": 112,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Malta",
+        "CountryCode": "MT",
+        "Slug": "malta",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 448,
+        "NewDeaths": 0,
+        "TotalDeaths": 4,
+        "NewRecovered": 33,
+        "TotalRecovered": 282,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Marshall Islands",
+        "CountryCode": "MH",
+        "Slug": "marshall-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Martinique",
+        "CountryCode": "MQ",
+        "Slug": "martinique",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Mauritania",
+        "CountryCode": "MR",
+        "Slug": "mauritania",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 7,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 6,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Mauritius",
+        "CountryCode": "MU",
+        "Slug": "mauritius",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 332,
+        "NewDeaths": 0,
+        "TotalDeaths": 9,
+        "NewRecovered": 4,
+        "TotalRecovered": 299,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Mayotte",
+        "CountryCode": "YT",
+        "Slug": "mayotte",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Mexico",
+        "CountryCode": "MX",
+        "Slug": "mexico",
+        "NewConfirmed": 835,
+        "TotalConfirmed": 14677,
+        "NewDeaths": 46,
+        "TotalDeaths": 1351,
+        "NewRecovered": 1205,
+        "TotalRecovered": 8354,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Micronesia, Federated States of",
+        "CountryCode": "FM",
+        "Slug": "micronesia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Moldova",
+        "CountryCode": "MD",
+        "Slug": "moldova",
+        "NewConfirmed": 104,
+        "TotalConfirmed": 3408,
+        "NewDeaths": 2,
+        "TotalDeaths": 96,
+        "NewRecovered": 70,
+        "TotalRecovered": 895,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Monaco",
+        "CountryCode": "MC",
+        "Slug": "monaco",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 94,
+        "NewDeaths": 0,
+        "TotalDeaths": 4,
+        "NewRecovered": 0,
+        "TotalRecovered": 42,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Mongolia",
+        "CountryCode": "MN",
+        "Slug": "mongolia",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 38,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 9,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Montenegro",
+        "CountryCode": "ME",
+        "Slug": "montenegro",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 321,
+        "NewDeaths": 1,
+        "TotalDeaths": 7,
+        "NewRecovered": 0,
+        "TotalRecovered": 153,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Montserrat",
+        "CountryCode": "MS",
+        "Slug": "montserrat",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Morocco",
+        "CountryCode": "MA",
+        "Slug": "morocco",
+        "NewConfirmed": 168,
+        "TotalConfirmed": 4065,
+        "NewDeaths": 2,
+        "TotalDeaths": 161,
+        "NewRecovered": 56,
+        "TotalRecovered": 593,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Mozambique",
+        "CountryCode": "MZ",
+        "Slug": "mozambique",
+        "NewConfirmed": 6,
+        "TotalConfirmed": 76,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 12,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Myanmar",
+        "CountryCode": "MM",
+        "Slug": "myanmar",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 146,
+        "NewDeaths": 0,
+        "TotalDeaths": 5,
+        "NewRecovered": 0,
+        "TotalRecovered": 10,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Namibia",
+        "CountryCode": "NA",
+        "Slug": "namibia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 16,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 1,
+        "TotalRecovered": 8,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Nauru",
+        "CountryCode": "NR",
+        "Slug": "nauru",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Netherlands",
+        "CountryCode": "NL",
+        "Slug": "netherlands",
+        "NewConfirmed": 656,
+        "TotalConfirmed": 38040,
+        "NewDeaths": 67,
+        "TotalDeaths": 4491,
+        "NewRecovered": 15,
+        "TotalRecovered": 117,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Netherlands Antilles",
+        "CountryCode": "AN",
+        "Slug": "netherlands-antilles",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "New Caledonia",
+        "CountryCode": "NC",
+        "Slug": "new-caledonia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Nicaragua",
+        "CountryCode": "NI",
+        "Slug": "nicaragua",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 13,
+        "NewDeaths": 0,
+        "TotalDeaths": 3,
+        "NewRecovered": 0,
+        "TotalRecovered": 7,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Niger",
+        "CountryCode": "NE",
+        "Slug": "niger",
+        "NewConfirmed": 12,
+        "TotalConfirmed": 696,
+        "NewDeaths": 2,
+        "TotalDeaths": 29,
+        "NewRecovered": 25,
+        "TotalRecovered": 350,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Nigeria",
+        "CountryCode": "NG",
+        "Slug": "nigeria",
+        "NewConfirmed": 91,
+        "TotalConfirmed": 1273,
+        "NewDeaths": 5,
+        "TotalDeaths": 40,
+        "NewRecovered": 17,
+        "TotalRecovered": 239,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Niue",
+        "CountryCode": "NU",
+        "Slug": "niue",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Norfolk Island",
+        "CountryCode": "NF",
+        "Slug": "norfolk-island",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Northern Mariana Islands",
+        "CountryCode": "MP",
+        "Slug": "northern-mariana-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Norway",
+        "CountryCode": "NO",
+        "Slug": "norway",
+        "NewConfirmed": 28,
+        "TotalConfirmed": 7527,
+        "NewDeaths": 0,
+        "TotalDeaths": 201,
+        "NewRecovered": 0,
+        "TotalRecovered": 32,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Oman",
+        "CountryCode": "OM",
+        "Slug": "oman",
+        "NewConfirmed": 93,
+        "TotalConfirmed": 1998,
+        "NewDeaths": 0,
+        "TotalDeaths": 10,
+        "NewRecovered": 4,
+        "TotalRecovered": 333,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Pakistan",
+        "CountryCode": "PK",
+        "Slug": "pakistan",
+        "NewConfirmed": 605,
+        "TotalConfirmed": 13328,
+        "NewDeaths": 12,
+        "TotalDeaths": 281,
+        "NewRecovered": 70,
+        "TotalRecovered": 2936,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Palau",
+        "CountryCode": "PW",
+        "Slug": "palau",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Panama",
+        "CountryCode": "PA",
+        "Slug": "panama",
+        "NewConfirmed": 241,
+        "TotalConfirmed": 5779,
+        "NewDeaths": 6,
+        "TotalDeaths": 165,
+        "NewRecovered": 0,
+        "TotalRecovered": 338,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Papua New Guinea",
+        "CountryCode": "PG",
+        "Slug": "papua-new-guinea",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 8,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Paraguay",
+        "CountryCode": "PY",
+        "Slug": "paraguay",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 228,
+        "NewDeaths": 0,
+        "TotalDeaths": 9,
+        "NewRecovered": 0,
+        "TotalRecovered": 85,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Peru",
+        "CountryCode": "PE",
+        "Slug": "peru",
+        "NewConfirmed": 2186,
+        "TotalConfirmed": 27517,
+        "NewDeaths": 28,
+        "TotalDeaths": 728,
+        "NewRecovered": 291,
+        "TotalRecovered": 8088,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Philippines",
+        "CountryCode": "PH",
+        "Slug": "philippines",
+        "NewConfirmed": 285,
+        "TotalConfirmed": 7579,
+        "NewDeaths": 7,
+        "TotalDeaths": 501,
+        "NewRecovered": 70,
+        "TotalRecovered": 862,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Pitcairn",
+        "CountryCode": "PN",
+        "Slug": "pitcairn",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Poland",
+        "CountryCode": "PL",
+        "Slug": "poland",
+        "NewConfirmed": 344,
+        "TotalConfirmed": 11617,
+        "NewDeaths": 11,
+        "TotalDeaths": 535,
+        "NewRecovered": 139,
+        "TotalRecovered": 2265,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
         "Country": "Portugal",
+        "CountryCode": "PT",
         "Slug": "portugal",
-        "ISO2": "PT"
+        "NewConfirmed": 472,
+        "TotalConfirmed": 23864,
+        "NewDeaths": 23,
+        "TotalDeaths": 903,
+        "NewRecovered": 52,
+        "TotalRecovered": 1329,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Puerto Rico",
+        "CountryCode": "PR",
+        "Slug": "puerto-rico",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Qatar",
+        "CountryCode": "QA",
+        "Slug": "qatar",
+        "NewConfirmed": 929,
+        "TotalConfirmed": 10287,
+        "NewDeaths": 0,
+        "TotalDeaths": 10,
+        "NewRecovered": 83,
+        "TotalRecovered": 1012,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Republic of Kosovo",
+        "CountryCode": "XK",
+        "Slug": "kosovo",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 510,
+        "NewDeaths": 0,
+        "TotalDeaths": 12,
+        "NewRecovered": 0,
+        "TotalRecovered": 93,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Romania",
+        "CountryCode": "RO",
+        "Slug": "romania",
+        "NewConfirmed": 401,
+        "TotalConfirmed": 11036,
+        "NewDeaths": 18,
+        "TotalDeaths": 619,
+        "NewRecovered": 164,
+        "TotalRecovered": 3054,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Russian Federation",
+        "CountryCode": "RU",
+        "Slug": "russia",
+        "NewConfirmed": 6361,
+        "TotalConfirmed": 80949,
+        "NewDeaths": 66,
+        "TotalDeaths": 747,
+        "NewRecovered": 517,
+        "TotalRecovered": 6767,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Rwanda",
+        "CountryCode": "RW",
+        "Slug": "rwanda",
+        "NewConfirmed": 8,
+        "TotalConfirmed": 191,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 4,
+        "TotalRecovered": 92,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Réunion",
+        "CountryCode": "RE",
+        "Slug": "réunion",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saint Helena",
+        "CountryCode": "SH",
+        "Slug": "saint-helena",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saint Kitts and Nevis",
+        "CountryCode": "KN",
+        "Slug": "saint-kitts-and-nevis",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 15,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 2,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saint Lucia",
+        "CountryCode": "LC",
+        "Slug": "saint-lucia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 15,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 15,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saint Pierre and Miquelon",
+        "CountryCode": "PM",
+        "Slug": "saint-pierre-and-miquelon",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saint Vincent and Grenadines",
+        "CountryCode": "VC",
+        "Slug": "saint-vincent-and-the-grenadines",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 14,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 5,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saint-Barthélemy",
+        "CountryCode": "BL",
+        "Slug": "saint-barthélemy",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saint-Martin (French part)",
+        "CountryCode": "MF",
+        "Slug": "saint-martin-french-part",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Samoa",
+        "CountryCode": "WS",
+        "Slug": "samoa",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "San Marino",
+        "CountryCode": "SM",
+        "Slug": "san-marino",
+        "NewConfirmed": 25,
+        "TotalConfirmed": 538,
+        "NewDeaths": 1,
+        "TotalDeaths": 41,
+        "NewRecovered": 0,
+        "TotalRecovered": 64,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Sao Tome and Principe",
+        "CountryCode": "ST",
+        "Slug": "sao-tome-and-principe",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 4,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Saudi Arabia",
+        "CountryCode": "SA",
+        "Slug": "saudi-arabia",
+        "NewConfirmed": 1223,
+        "TotalConfirmed": 17522,
+        "NewDeaths": 3,
+        "TotalDeaths": 139,
+        "NewRecovered": 142,
+        "TotalRecovered": 2357,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Senegal",
+        "CountryCode": "SN",
+        "Slug": "senegal",
+        "NewConfirmed": 57,
+        "TotalConfirmed": 671,
+        "NewDeaths": 2,
+        "TotalDeaths": 9,
+        "NewRecovered": 7,
+        "TotalRecovered": 283,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Serbia",
+        "CountryCode": "RS",
+        "Slug": "serbia",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 6630,
+        "NewDeaths": 0,
+        "TotalDeaths": 125,
+        "NewRecovered": 0,
+        "TotalRecovered": 870,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Seychelles",
+        "CountryCode": "SC",
+        "Slug": "seychelles",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 11,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 6,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Sierra Leone",
+        "CountryCode": "SL",
+        "Slug": "sierra-leone",
+        "NewConfirmed": 11,
+        "TotalConfirmed": 93,
+        "NewDeaths": 2,
+        "TotalDeaths": 4,
+        "NewRecovered": 0,
+        "TotalRecovered": 10,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Singapore",
+        "CountryCode": "SG",
+        "Slug": "singapore",
+        "NewConfirmed": 931,
+        "TotalConfirmed": 13624,
+        "NewDeaths": 0,
+        "TotalDeaths": 12,
+        "NewRecovered": 58,
+        "TotalRecovered": 1060,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Slovakia",
+        "CountryCode": "SK",
+        "Slug": "slovakia",
+        "NewConfirmed": 6,
+        "TotalConfirmed": 1379,
+        "NewDeaths": 1,
+        "TotalDeaths": 18,
+        "NewRecovered": 8,
+        "TotalRecovered": 394,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Slovenia",
+        "CountryCode": "SI",
+        "Slug": "slovenia",
+        "NewConfirmed": 8,
+        "TotalConfirmed": 1396,
+        "NewDeaths": 1,
+        "TotalDeaths": 82,
+        "NewRecovered": 2,
+        "TotalRecovered": 221,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Solomon Islands",
+        "CountryCode": "SB",
+        "Slug": "solomon-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Somalia",
+        "CountryCode": "SO",
+        "Slug": "somalia",
+        "NewConfirmed": 46,
+        "TotalConfirmed": 436,
+        "NewDeaths": 5,
+        "TotalDeaths": 23,
+        "NewRecovered": 2,
+        "TotalRecovered": 10,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "South Africa",
+        "CountryCode": "ZA",
+        "Slug": "south-africa",
+        "NewConfirmed": 185,
+        "TotalConfirmed": 4546,
+        "NewDeaths": 1,
+        "TotalDeaths": 87,
+        "NewRecovered": 0,
+        "TotalRecovered": 1473,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "South Georgia and the South Sandwich Islands",
+        "CountryCode": "GS",
+        "Slug": "south-georgia-and-the-south-sandwich-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "South Sudan",
+        "CountryCode": "SS",
+        "Slug": "south-sudan",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 6,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
         "Country": "Spain",
+        "CountryCode": "ES",
         "Slug": "spain",
-        "ISO2": "ES"
+        "NewConfirmed": 2870,
+        "TotalConfirmed": 226629,
+        "NewDeaths": 288,
+        "TotalDeaths": 23190,
+        "NewRecovered": 22019,
+        "TotalRecovered": 117727,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Sri Lanka",
+        "CountryCode": "LK",
+        "Slug": "sri-lanka",
+        "NewConfirmed": 63,
+        "TotalConfirmed": 523,
+        "NewDeaths": 0,
+        "TotalDeaths": 7,
+        "NewRecovered": 2,
+        "TotalRecovered": 120,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Sudan",
+        "CountryCode": "SD",
+        "Slug": "sudan",
+        "NewConfirmed": 24,
+        "TotalConfirmed": 237,
+        "NewDeaths": 4,
+        "TotalDeaths": 21,
+        "NewRecovered": 1,
+        "TotalRecovered": 20,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Suriname",
+        "CountryCode": "SR",
+        "Slug": "suriname",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 10,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 7,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Svalbard and Jan Mayen Islands",
+        "CountryCode": "SJ",
+        "Slug": "svalbard-and-jan-mayen-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Swaziland",
+        "CountryCode": "SZ",
+        "Slug": "swaziland",
+        "NewConfirmed": 3,
+        "TotalConfirmed": 59,
+        "NewDeaths": 0,
+        "TotalDeaths": 1,
+        "NewRecovered": 0,
+        "TotalRecovered": 10,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Sweden",
+        "CountryCode": "SE",
+        "Slug": "sweden",
+        "NewConfirmed": 463,
+        "TotalConfirmed": 18640,
+        "NewDeaths": 2,
+        "TotalDeaths": 2194,
+        "NewRecovered": 0,
+        "TotalRecovered": 1005,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Switzerland",
+        "CountryCode": "CH",
+        "Slug": "switzerland",
+        "NewConfirmed": 167,
+        "TotalConfirmed": 29061,
+        "NewDeaths": 11,
+        "TotalDeaths": 1610,
+        "NewRecovered": 500,
+        "TotalRecovered": 21800,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Syrian Arab Republic (Syria)",
+        "CountryCode": "SY",
+        "Slug": "syria",
+        "NewConfirmed": 1,
+        "TotalConfirmed": 43,
+        "NewDeaths": 0,
+        "TotalDeaths": 3,
+        "NewRecovered": 3,
+        "TotalRecovered": 14,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Taiwan, Republic of China",
+        "CountryCode": "TW",
+        "Slug": "taiwan",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 429,
+        "NewDeaths": 0,
+        "TotalDeaths": 6,
+        "NewRecovered": 6,
+        "TotalRecovered": 281,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Tajikistan",
+        "CountryCode": "TJ",
+        "Slug": "tajikistan",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Tanzania, United Republic of",
+        "CountryCode": "TZ",
+        "Slug": "tanzania",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 299,
+        "NewDeaths": 0,
+        "TotalDeaths": 10,
+        "NewRecovered": 0,
+        "TotalRecovered": 48,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Thailand",
+        "CountryCode": "TH",
+        "Slug": "thailand",
+        "NewConfirmed": 15,
+        "TotalConfirmed": 2922,
+        "NewDeaths": 0,
+        "TotalDeaths": 51,
+        "NewRecovered": 47,
+        "TotalRecovered": 2594,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Timor-Leste",
+        "CountryCode": "TL",
+        "Slug": "timor-leste",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 24,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 2,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Togo",
+        "CountryCode": "TG",
+        "Slug": "togo",
+        "NewConfirmed": 2,
+        "TotalConfirmed": 98,
+        "NewDeaths": 0,
+        "TotalDeaths": 6,
+        "NewRecovered": 0,
+        "TotalRecovered": 62,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Tokelau",
+        "CountryCode": "TK",
+        "Slug": "tokelau",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Tonga",
+        "CountryCode": "TO",
+        "Slug": "tonga",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Trinidad and Tobago",
+        "CountryCode": "TT",
+        "Slug": "trinidad-and-tobago",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 115,
+        "NewDeaths": 0,
+        "TotalDeaths": 8,
+        "NewRecovered": 1,
+        "TotalRecovered": 54,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Tunisia",
+        "CountryCode": "TN",
+        "Slug": "tunisia",
+        "NewConfirmed": 10,
+        "TotalConfirmed": 949,
+        "NewDeaths": 0,
+        "TotalDeaths": 38,
+        "NewRecovered": 9,
+        "TotalRecovered": 216,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Turkey",
+        "CountryCode": "TR",
+        "Slug": "turkey",
+        "NewConfirmed": 2357,
+        "TotalConfirmed": 110130,
+        "NewDeaths": 99,
+        "TotalDeaths": 2805,
+        "NewRecovered": 3558,
+        "TotalRecovered": 29140,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Turkmenistan",
+        "CountryCode": "TM",
+        "Slug": "turkmenistan",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Turks and Caicos Islands",
+        "CountryCode": "TC",
+        "Slug": "turks-and-caicos-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Tuvalu",
+        "CountryCode": "TV",
+        "Slug": "tuvalu",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "US Minor Outlying Islands",
+        "CountryCode": "UM",
+        "Slug": "us-minor-outlying-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Uganda",
+        "CountryCode": "UG",
+        "Slug": "uganda",
+        "NewConfirmed": 4,
+        "TotalConfirmed": 79,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 46,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
         "Country": "Ukraine",
+        "CountryCode": "UA",
         "Slug": "ukraine",
-        "ISO2": "UA"
+        "NewConfirmed": 492,
+        "TotalConfirmed": 8617,
+        "NewDeaths": 8,
+        "TotalDeaths": 209,
+        "NewRecovered": 58,
+        "TotalRecovered": 840,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "United Arab Emirates",
+        "CountryCode": "AE",
+        "Slug": "united-arab-emirates",
+        "NewConfirmed": 536,
+        "TotalConfirmed": 10349,
+        "NewDeaths": 5,
+        "TotalDeaths": 76,
+        "NewRecovered": 91,
+        "TotalRecovered": 1978,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "United Kingdom",
+        "CountryCode": "GB",
+        "Slug": "united-kingdom",
+        "NewConfirmed": 4468,
+        "TotalConfirmed": 154037,
+        "NewDeaths": 413,
+        "TotalDeaths": 20794,
+        "NewRecovered": 4,
+        "TotalRecovered": 778,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "United States of America",
+        "CountryCode": "US",
+        "Slug": "united-states",
+        "NewConfirmed": 27619,
+        "TotalConfirmed": 964673,
+        "NewDeaths": 1124,
+        "TotalDeaths": 54848,
+        "NewRecovered": 6616,
+        "TotalRecovered": 106988,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Uruguay",
+        "CountryCode": "UY",
+        "Slug": "uruguay",
+        "NewConfirmed": 10,
+        "TotalConfirmed": 606,
+        "NewDeaths": 1,
+        "TotalDeaths": 15,
+        "NewRecovered": 5,
+        "TotalRecovered": 375,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Uzbekistan",
+        "CountryCode": "UZ",
+        "Slug": "uzbekistan",
+        "NewConfirmed": 7,
+        "TotalConfirmed": 1869,
+        "NewDeaths": 0,
+        "TotalDeaths": 8,
+        "NewRecovered": 82,
+        "TotalRecovered": 789,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Vanuatu",
+        "CountryCode": "VU",
+        "Slug": "vanuatu",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Venezuela (Bolivarian Republic)",
+        "CountryCode": "VE",
+        "Slug": "venezuela",
+        "NewConfirmed": 2,
+        "TotalConfirmed": 325,
+        "NewDeaths": 0,
+        "TotalDeaths": 10,
+        "NewRecovered": 5,
+        "TotalRecovered": 137,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Viet Nam",
+        "CountryCode": "VN",
+        "Slug": "vietnam",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 270,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 225,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Virgin Islands, US",
+        "CountryCode": "VI",
+        "Slug": "virgin-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Wallis and Futuna Islands",
+        "CountryCode": "WF",
+        "Slug": "wallis-and-futuna-islands",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 0,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 0,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Western Sahara",
+        "CountryCode": "EH",
+        "Slug": "western-sahara",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 6,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 5,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Yemen",
+        "CountryCode": "YE",
+        "Slug": "yemen",
+        "NewConfirmed": 0,
+        "TotalConfirmed": 1,
+        "NewDeaths": 0,
+        "TotalDeaths": 0,
+        "NewRecovered": 0,
+        "TotalRecovered": 1,
+        "Date": "2020-04-27T13:21:40Z"
+    },
+    {
+        "Country": "Zambia",
+        "CountryCode": "ZM",
+        "Slug": "zambia",
+        "NewConfirmed": 4,
+        "TotalConfirmed": 88,
+        "NewDeaths": 0,
+        "TotalDeaths": 3,
+        "NewRecovered": 5,
+        "TotalRecovered": 42,
+        "Date": "2020-04-27T13:21:40Z"
     },
     {
         "Country": "Zimbabwe",
+        "CountryCode": "ZW",
         "Slug": "zimbabwe",
-        "ISO2": "ZW"
+        "NewConfirmed": 0,
+        "TotalConfirmed": 31,
+        "NewDeaths": 0,
+        "TotalDeaths": 4,
+        "NewRecovered": 0,
+        "TotalRecovered": 2,
+        "Date": "2020-04-27T13:21:40Z"
     }
 ]
 
-let list=CountryList.map(item=>item.Slug)
+let list=CountryList.filter(item=>item.TotalConfirmed!==0).map(item=>item.Slug)
+
 export default list
 

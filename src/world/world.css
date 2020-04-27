@@ -4,7 +4,6 @@
   transform: translateX(-50%);
   width: 30%;
   margin: auto;
-  margin-top: 70px;
 }
 .search-box input {
   width: 100%;
@@ -23,7 +22,7 @@
   text-align: left;
 }
 .search-list p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .search-list p:hover {
   font-weight: bold;
@@ -36,11 +35,21 @@
   margin-top: 250px;
 }
 .warning {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translateX(-50%);
   font-weight: bold;
   font-size: 16px;
   color: red;
+  text-align: center;
+}
+.clear-search{
+  position: absolute;
+  margin-top: 16px;
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  margin-left: -35px;
+  color: #aaa;
+}
+.clear-search:hover{
+  color: black;
+  transform: scale(1.1);
 }

@@ -37,45 +37,39 @@ export default class World extends Component {
   };
 
   handleSubmit = async (country = "") => {
+    this.setState({
+      isloading: true,
+      searchlist:[]
+    });
     let data = {};
     if (country !== "") {
       document.querySelector("#country-input").value = country;
       data = await fetch(`https://api.covid19api.com/total/country/${country}`)
         .then((data) => data.json())
-        .catch(() => {
-          data = {
-            Confirmed: 0,
-            Deaths: 0,
-            Recovered: 0,
-            Active: 0,
-            Country: "Country name",
-          };
-        });
-
-      if (Object.values(data).length !== 0) {
-        data = data[(Object.keys(data).length - 1).toString()];
-      } else {
-        data = {
-          Confirmed: 0,
-          Deaths: 0,
-          Recovered: 0,
-          Active: 0,
-          Country: "Country name",
-        };
-      }
+        .catch(
+          () =>
+            (data = {
+              Confirmed: 0,
+              Deaths: 0,
+              Recovered: 0,
+              Active: 0,
+              Country: "Country name",
+            })
+        );
     }
+    data = data[(Object.keys(data).length - 1).toString()];
     data.Active = data.Confirmed - data.Recovered;
     for (let i in data) {
       data[i] = data[i].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
+  
     this.setState({
-      searchlist: [],
       countrydata: data,
+      isloading: false,
     });
   };
 
   render() {
-    console.log(this.state);
     let searchlist = (this.state.searchlist || []).map((item, i) => (
       <p onClick={() => this.handleSubmit(item)} key={i}>
         {item}
@@ -123,8 +117,8 @@ export default class World extends Component {
     return (
       <div className="country-stat">
         <Header></Header>
-        <p className="warning">PLAESE SELECT COUNTRY NAME TO PROCEED</p>
         <div className="search-box">
+        <p className="warning">PLAESE SELECT COUNTRY NAME TO PROCEED</p>
           <input
             type="text"
             placeholder="Search by country"
@@ -139,12 +133,19 @@ export default class World extends Component {
               }
             }}
           ></input>
+          <button
+            className="clear-search"
+            onClick={() => {
+              document.querySelector("#country-input").value = "";
+              this.setState({ searchlist: [] });
+            }}
+          >
+            <i className="fas fa-times"></i>
+          </button>
           <div className="search-list">{searchlist}</div>
         </div>
 
-        <div className="world-content">
-          {content}
-        </div>
+        <div className="world-content">{content}</div>
       </div>
     );
   }
