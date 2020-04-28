@@ -12,6 +12,11 @@
   text-align: center;
   box-sizing: border-box;
 }
+@media screen and (max-width: 600px),(max-width:900px) {
+  .world .nepal{
+   padding: 10px 15px;
+  }
+}
 .nepal {
   margin-top: 30px;
 }

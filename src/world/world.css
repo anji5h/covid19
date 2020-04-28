@@ -1,6 +1,7 @@
 .search-box {
   width: 100%;
   text-align: center;
+  padding-top: 30px;
 }
 .search-box input {
   width: 30%;
@@ -51,6 +52,7 @@
   font-size: 16px;
   color: red;
   text-align: center;
+  padding-bottom: 10px;
 }
 .clear-search{
   position: absolute;
