@@ -38,7 +38,7 @@ h3 {
 }
 @media screen and (max-width: 600px),(max-width:900px) {
   .stat .row1{
-    grid-template-columns: 150px 150px ;
+    grid-template-columns: 130px 130px ;
     grid-row-gap: 15px;
   }
 }
@@ -51,7 +51,7 @@ h3 {
 }
 @media screen and (max-width: 600px),(max-width:900px) {
   .stat .row2{
-    grid-template-columns: 150px 150px ;
+    grid-template-columns: 130px 130px ;
   }
 }
 .stat .row1 div:nth-child(1),.stat .row2 div:nth-child(1) {
