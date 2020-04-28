@@ -3,3 +3,12 @@
     margin-top: 100px;
     width: 50%;
 }
+@media screen and (max-width: 600px),(max-width:900px) {
+    .prevention{
+     width: 100%;
+     margin:0;
+     padding: 50px;
+     box-sizing: border-box;
+     text-align: center;
+    }
+  }

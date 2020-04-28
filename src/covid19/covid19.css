@@ -5,7 +5,7 @@
 .nepal {
   margin: auto;
   margin-top: 80px;
-  width: 45%;
+  width: fit-content;
   padding: 20px 25px;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -31,12 +31,23 @@ h3 {
   grid-template-columns: 180px 180px 180px 180px;
   grid-column-gap: 15px;
 }
+@media screen and (max-width: 600px),(max-width:900px) {
+  .stat .row1{
+    grid-template-columns: 150px 150px ;
+    grid-row-gap: 15px;
+  }
+}
 .stat .row2{
   width: fit-content;
-  margin: 50px auto 0px auto;
+  margin: 15px auto 0px auto;
   display: grid;
   grid-template-columns: 180px 180px;
   grid-column-gap: 15px;
+}
+@media screen and (max-width: 600px),(max-width:900px) {
+  .stat .row2{
+    grid-template-columns: 150px 150px ;
+  }
 }
 .stat .row1 div:nth-child(1),.stat .row2 div:nth-child(1) {
   color: #008cba;

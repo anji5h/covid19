@@ -3,8 +3,21 @@
   margin-top: 20px;
   width: 50%;
 }
+@media screen and (max-width: 600px),(max-width:900px) {
+  .symptoms{
+  width: 100%;
+   margin:0;
+   text-align: center;
+  }
+}
 .corona-info {
   width: 80%;
+}
+@media screen and (max-width: 600px),(max-width:900px) {
+  .corona-info{
+   width: 100%;
+   text-align: center;
+  }
 }
 .corona-info p:nth-child(1) {
   font-weight: bold;
@@ -36,6 +49,15 @@
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 100px;
+}
+@media screen and (max-width: 600px),(max-width:800px) {
+  .img-box{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    grid-template-columns: 300px;
+    grid-row-gap: 25px;
+  }
 }
 .sym-box {
   text-align: center;

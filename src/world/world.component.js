@@ -121,7 +121,7 @@ export default class World extends Component {
         <p className="warning">PLAESE SELECT COUNTRY NAME TO PROCEED</p>
           <input
             type="text"
-            placeholder="Search by country"
+            placeholder="Select Country"
             name="country"
             id="country-input"
             onChange={this.handleChange}
