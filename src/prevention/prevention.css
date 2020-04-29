@@ -7,8 +7,18 @@
     .prevention{
      width: 100%;
      margin:0;
-     padding: 50px;
+     padding-top: 50px;
      box-sizing: border-box;
      text-align: center;
+     border: 1px solid black;
+    }
+  }
+  @media screen and (max-width: 600px),(max-width:900px) {
+    .img-box{
+      width: fit-content;
+      margin: auto;
+      margin-top: 30px;
+      grid-template-columns: 300px;
+      grid-row-gap: 25px;
     }
   }
