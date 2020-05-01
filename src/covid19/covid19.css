@@ -98,33 +98,33 @@ h3 {
 
 @keyframes slide1 {
   0% {
-    transform: translateX(900px);
+    margin-left: 1500px;
   }
   100% {
-    transform: translateX(0);
+    margin-left: 0px;
   }
 }
 @keyframes slide2 {
   0% {
-    transform: translateX(930px);
+    margin-left: 1500px;
   }
   100% {
-    transform: translateX(0);
+    margin-left: 0px;
   }
 }
 @keyframes slide3 {
   0% {
-    transform: translateX(960px);
+    margin-left: 1500px;
   }
   100% {
-    transform: translateX(0);
+    margin-left: 0px;
   }
 }
 @keyframes slide4 {
   0% {
-    transform: translateX(990px);
+    margin-left: 1500px;
   }
   100% {
-    transform: translateX(0);
+    margin-left: 0px;
   }
 }
