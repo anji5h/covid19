@@ -34,7 +34,6 @@
   .searchbox {
     margin-top: 10px;
     width: 380px !important;
-    border: solid;
   }
 }
 .searchlist {
@@ -121,4 +120,15 @@
 
 .graph {
   height: 330px;
+}
+
+.countrytable{
+  padding-bottom: 1%;
+  width: 80%;
+  margin: auto;
+}
+.tableheader{
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
 }
